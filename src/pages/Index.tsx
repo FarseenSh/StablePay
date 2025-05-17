@@ -236,9 +236,11 @@ const Index = () => {
             </div>
             
             <div className="text-center mt-12">
-              <Button size="lg">
-                Try StablePay Demo
-              </Button>
+              <a href="/flows">
+                <Button size="lg">
+                  Try StablePay Demo
+                </Button>
+              </a>
               <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">
                 Experience the process for yourself with our interactive checkout demo.
               </p>

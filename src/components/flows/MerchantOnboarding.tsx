@@ -164,6 +164,30 @@ const MerchantOnboarding = () => {
                   />
                   Solflare
                 </Button>
+                <Button 
+                  className="w-full justify-start" 
+                  variant="outline"
+                  onClick={connectWallet}
+                >
+                  <img
+                    src="https://backpack.app/favicon.ico"
+                    alt="Backpack"
+                    className="w-5 h-5 mr-2"
+                  />
+                  Backpack
+                </Button>
+                <Button 
+                  className="w-full justify-start" 
+                  variant="outline"
+                  onClick={connectWallet}
+                >
+                  <img
+                    src="https://glow.app/favicon.ico"
+                    alt="Glow"
+                    className="w-5 h-5 mr-2"
+                  />
+                  Glow Wallet
+                </Button>
                 <div className="pt-2 mt-2 border-t border-slate-200 dark:border-slate-700">
                   <Button 
                     className="w-full" 
@@ -361,7 +385,7 @@ const MerchantOnboarding = () => {
           <div className="flex justify-between items-center">
             {steps.map((step, index) => (
               <React.Fragment key={index}>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center relative" style={{ top: 0 }}>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center ${
                       index < currentStep

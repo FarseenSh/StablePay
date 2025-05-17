@@ -39,54 +39,10 @@ const Navbar = () => {
           <a href="#documentation" className="text-sm font-medium hover:text-primary-600 transition-colors">
             Documentation
           </a>
-          
-          {/* Dashboard Dropdown */}
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-sm font-medium hover:text-primary-600 transition-colors bg-transparent p-0 h-auto">
-                  Dashboard
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[180px] gap-3 p-4">
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <a
-                          href="/dashboard"
-                          className="block select-none space-y-1 rounded-md p-3 hover:bg-slate-100 dark:hover:bg-slate-800"
-                        >
-                          <div className="text-sm font-medium">Dashboard</div>
-                          <p className="text-xs text-slate-500 dark:text-slate-400">
-                            View your merchant dashboard
-                          </p>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <a
-                          href="/flows"
-                          className="block select-none space-y-1 rounded-md p-3 hover:bg-slate-100 dark:hover:bg-slate-800"
-                        >
-                          <div className="text-sm font-medium">Flows</div>
-                          <p className="text-xs text-slate-500 dark:text-slate-400">
-                            View workflow demonstrations
-                          </p>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="outline" size="sm">
-            Sign In
-          </Button>
           <a href="/dashboard">
             <Button size="sm">Get Started</Button>
           </a>
@@ -134,40 +90,7 @@ const Navbar = () => {
               Documentation
             </a>
             
-            {/* Dashboard Section with Dropdown */}
-            <div className="py-2">
-              <div 
-                className="flex items-center justify-between text-sm font-medium hover:text-primary-600 transition-colors cursor-pointer"
-                onClick={() => setIsDashboardOpen(!isDashboardOpen)}
-              >
-                <span>Dashboard</span>
-                <ChevronDown className={`h-4 w-4 transition-transform ${isDashboardOpen ? 'rotate-180' : ''}`} />
-              </div>
-              
-              {isDashboardOpen && (
-                <div className="ml-4 mt-2 space-y-2 border-l-2 border-slate-200 dark:border-slate-700 pl-4">
-                  <a 
-                    href="/dashboard" 
-                    className="block text-sm font-medium hover:text-primary-600 transition-colors py-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Dashboard
-                  </a>
-                  <a 
-                    href="/flows" 
-                    className="block text-sm font-medium hover:text-primary-600 transition-colors py-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Flows
-                  </a>
-                </div>
-              )}
-            </div>
-            
             <div className="flex flex-col gap-2 mt-2">
-              <Button variant="outline" size="sm" className="w-full">
-                Sign In
-              </Button>
               <a href="/dashboard" className="w-full">
                 <Button size="sm" className="w-full">Get Started</Button>
               </a>
