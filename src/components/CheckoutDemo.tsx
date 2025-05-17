@@ -112,7 +112,6 @@ const CheckoutDemo = () => {
               
               <div className="space-y-2">
                 <Button 
-                  variant="outline" 
                   className="w-full justify-start"
                   onClick={handleConnect}
                   disabled={processing}
@@ -136,6 +135,32 @@ const CheckoutDemo = () => {
                     className="w-5 h-5 mr-2"
                   />
                   Solflare
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start"
+                  onClick={handleConnect}
+                  disabled={processing}
+                >
+                  <img
+                    src="https://backpack.app/favicon.ico"
+                    alt="Backpack"
+                    className="w-5 h-5 mr-2"
+                  />
+                  Backpack
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start"
+                  onClick={handleConnect}
+                  disabled={processing}
+                >
+                  <img
+                    src="https://glow.app/favicon.ico"
+                    alt="Glow"
+                    className="w-5 h-5 mr-2"
+                  />
+                  Glow Wallet
                 </Button>
               </div>
               

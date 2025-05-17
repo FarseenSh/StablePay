@@ -385,7 +385,7 @@ const MerchantOnboarding = () => {
           <div className="flex justify-between items-center">
             {steps.map((step, index) => (
               <React.Fragment key={index}>
-                <div className="flex flex-col items-center relative" style={{ top: 0 }}>
+                <div className="flex flex-col items-center" style={{ transform: 'translateY(0)' }}>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center ${
                       index < currentStep
@@ -406,6 +406,7 @@ const MerchantOnboarding = () => {
                     className={`flex-grow h-0.5 mx-1 ${
                       index < currentStep ? 'bg-primary-600' : 'bg-slate-200 dark:bg-slate-700'
                     }`}
+                    style={{ marginTop: "-16px" }}
                   />
                 )}
               </React.Fragment>
