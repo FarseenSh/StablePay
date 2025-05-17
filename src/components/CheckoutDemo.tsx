@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,8 +14,8 @@ type StablecoinOption = {
 const stablecoinOptions: StablecoinOption[] = [
   { id: 'usdc', name: 'USD Coin', symbol: 'USDC', icon: '💲', rate: 1 },
   { id: 'usdt', name: 'Tether', symbol: 'USDT', icon: '💵', rate: 0.9998 },
-  { id: 'dai', name: 'Dai', symbol: 'DAI', icon: '🔶', rate: 0.9995 },
-  { id: 'usdp', name: 'Pax Dollar', symbol: 'USDP', icon: '🟢', rate: 1.0002 },
+  { id: 'pyusd', name: 'PayPal USD', symbol: 'PYUSD', icon: '🔵', rate: 0.9997 },
+  { id: 'usd*', name: 'USD*', symbol: 'USD*', icon: '⭐', rate: 1.0003 },
 ];
 
 const CheckoutDemo = () => {
