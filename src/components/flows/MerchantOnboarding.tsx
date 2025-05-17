@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -165,6 +164,18 @@ const MerchantOnboarding = () => {
                   />
                   Solflare
                 </Button>
+                <div className="pt-2 mt-2 border-t border-slate-200 dark:border-slate-700">
+                  <Button 
+                    className="w-full" 
+                    variant="ghost"
+                    onClick={() => handleNext()}
+                  >
+                    Continue without wallet
+                  </Button>
+                  <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+                    You can connect your wallet later from the dashboard
+                  </p>
+                </div>
               </div>
             ) : (
               <div className="p-4 border border-green-200 bg-green-50 dark:bg-green-900/10 dark:border-green-900/20 rounded-lg">
@@ -256,7 +267,7 @@ const MerchantOnboarding = () => {
             <div className="space-y-2">
               <Label>Integration Method</Label>
               <p className="text-sm text-slate-600 dark:text-slate-300 mb-3">
-                How would you like to integrate PerenaPay?
+                How would you like to integrate StablePay?
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div 
@@ -304,7 +315,7 @@ const MerchantOnboarding = () => {
             </div>
             <h3 className="text-2xl font-bold mb-2">Setup Complete!</h3>
             <p className="text-slate-600 dark:text-slate-300 mb-6">
-              Your PerenaPay merchant account is ready to use.
+              Your StablePay merchant account is ready to use.
             </p>
             <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg mb-6 text-left">
               <div className="flex justify-between mb-2">
@@ -326,7 +337,9 @@ const MerchantOnboarding = () => {
                 }</span>
               </div>
             </div>
-            <Button className="w-full">Go to Dashboard</Button>
+            <a href="/dashboard" className="w-full">
+              <Button className="w-full">Go to Dashboard</Button>
+            </a>
           </div>
         );
 
@@ -340,7 +353,7 @@ const MerchantOnboarding = () => {
       <CardHeader>
         <CardTitle>Merchant Onboarding</CardTitle>
         <CardDescription>
-          Set up your PerenaPay account in just a few steps
+          Set up your StablePay account in just a few steps
         </CardDescription>
       </CardHeader>
       <CardContent>

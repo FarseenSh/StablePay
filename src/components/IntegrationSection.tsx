@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -6,16 +5,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const IntegrationSection = () => {
   const codeExamples = {
     reactJs: `// Install our SDK
-npm install @perenapay/react
+npm install @stablepay/react
 
-// Import the PerenaPay component
-import { PerenaPayButton } from '@perenapay/react';
+// Import the StablePay component
+import { StablePayButton } from '@stablepay/react';
 
 // Add it to your checkout
 const Checkout = () => (
   <div>
     <h2>Complete your purchase</h2>
-    <PerenaPayButton 
+    <StablePayButton 
       amount={99.99}
       merchantId="your_merchant_id"
       onSuccess={(txId) => console.log(txId)}
@@ -23,10 +22,10 @@ const Checkout = () => (
   </div>
 );`,
     javascript: `// Add our script to your HTML
-<script src="https://js.perenapay.com/v1"></script>
+<script src="https://js.stablepay.com/v1"></script>
 
-// Initialize PerenaPay in your code
-const checkout = new PerenaPay({
+// Initialize StablePay in your code
+const checkout = new StablePay({
   merchantId: 'your_merchant_id'
 });
 
@@ -43,16 +42,16 @@ document.getElementById('pay-button').addEventListener('click', async () => {
   }
 });`,
     nodejs: `// Install our server SDK
-npm install @perenapay/node
+npm install @stablepay/node
 
 // Set up in your backend
 const express = require('express');
-const { PerenaPay } = require('@perenapay/node');
+const { StablePay } = require('@stablepay/node');
 
 const app = express();
-const perenaPay = new PerenaPay({
-  apiKey: process.env.PERENA_API_KEY,
-  secretKey: process.env.PERENA_SECRET_KEY
+const stablePay = new StablePay({
+  apiKey: process.env.STABLE_API_KEY,
+  secretKey: process.env.STABLE_SECRET_KEY
 });
 
 // Create payment intent endpoint
@@ -60,7 +59,7 @@ app.post('/create-payment', async (req, res) => {
   try {
     const { amount, metadata } = req.body;
     
-    const intent = await perenaPay.createPaymentIntent({
+    const intent = await stablePay.createPaymentIntent({
       amount,
       currency: 'USD',
       metadata
@@ -73,13 +72,13 @@ app.post('/create-payment', async (req, res) => {
 });`,
     shopify: `// Our Shopify app allows you to:
 // 1. Install directly from the Shopify App Store
-// 2. Configure your PerenaPay account
+// 2. Configure your StablePay account
 // 3. Add crypto payment options to your checkout
 
 // No coding required! Just follow these simple steps:
-// 1. Search for "PerenaPay" in the Shopify App Store
+// 1. Search for "StablePay" in the Shopify App Store
 // 2. Click "Add app" and follow the installation flow
-// 3. Connect your PerenaPay account
+// 3. Connect your StablePay account
 // 4. Configure your preferred stablecoins
 // 5. Start accepting crypto payments!`,
   };
@@ -89,7 +88,7 @@ app.post('/create-payment', async (req, res) => {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Easy Integration</h2>
         <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-          Integrate PerenaPay with just a few lines of code across various platforms.
+          Integrate StablePay with just a few lines of code across various platforms.
         </p>
       </div>
 

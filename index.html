@@ -1,31 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PerenaPay - Enterprise-Grade Stablecoin Payments on Solana</title>
-    <meta name="description" content="PerenaPay is an enterprise-grade stablecoin payment processor built on Solana that leverages Perena's stablecoin infrastructure." />
-    <meta name="author" content="Perena" />
+    <title>StablePay - Enterprise-Grade Stablecoin Payments on Solana</title>
+    <meta name="description" content="My new app" />
+    <meta name="author" content="Stable" />
     
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
-    <meta property="og:title" content="PerenaPay - Enterprise-Grade Stablecoin Payments on Solana" />
-    <meta property="og:description" content="PerenaPay is an enterprise-grade stablecoin payment processor built on Solana that leverages Perena's stablecoin infrastructure." />
+    <meta property="og:url" content="https://stable-pay-design-canvas.vercel.app" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:title" content="stable-pay-design-canvas" />
+    <meta property="og:description" content="My new app" />
+    <meta property="og:image" content="" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@perena_finance" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="stable-pay-design-canvas" />
+    <meta name="twitter:description" content="My new app" />
+    <meta name="twitter:image" content="" />
+    
+    <!-- Force cache clearing -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <!-- Script to prevent any favicon from being used -->
+    <script>
+      // Remove any favicon references
+      document.addEventListener('DOMContentLoaded', function() {
+        // Remove any existing favicons
+        const existingIcons = document.querySelectorAll('link[rel*="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"], link[rel="manifest"]');
+        existingIcons.forEach(icon => icon.parentNode.removeChild(icon));
+        
+        // Create a blank favicon to override any browser defaults
+        const blankIcon = document.createElement('link');
+        blankIcon.rel = 'icon';
+        blankIcon.href = 'data:,'; // Blank data URL
+        document.head.appendChild(blankIcon);
+      });
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <!-- Script commented out to remove Lovable branding: -->
+    <!-- <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script> -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

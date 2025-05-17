@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -8,71 +7,67 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <div className="text-primary-600 dark:text-primary-400 font-bold text-xl mr-1">Perena</div>
+              <div className="text-primary-600 dark:text-primary-400 font-bold text-xl mr-1">Stable</div>
               <div className="text-accent-500 font-bold text-xl">Pay</div>
             </div>
             <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
-              Enterprise-grade stablecoin payment processor built on Solana that leverages Perena's stablecoin infrastructure.
+              Enterprise-grade stablecoin payment processor built on Solana that leverages Stable's stablecoin infrastructure.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">
                 <span className="sr-only">Twitter</span>
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                 </svg>
               </a>
               <a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">
                 <span className="sr-only">GitHub</span>
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
               </a>
               <a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">
                 <span className="sr-only">Discord</span>
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.198.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                  <path d="M8.5 12a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"></path>
+                  <path d="M15.5 12a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"></path>
+                  <path d="M4.583 6.013a.5.5 0 0 1 .558-.417 21.67 21.67 0 0 1 4.417.455.5.5 0 0 0 .992.129A12 12 0 0 1 12 6a12 12 0 0 1 1.45.18.5.5 0 0 0 .992-.13 21.54 21.54 0 0 1 4.417-.454.5.5 0 0 1 .558.417c.022.123.117.791.151 1.165C19.78 8.357 20 10.253 20 12c0 1.231-.145 2.497-.5 3.5-.725 2.05-2.4 2.55-4.055 2.66a.497.497 0 0 0-.345.138.5.5 0 0 0-.143.34c.02.102.066.291.097.401.022.077.044.173.044.254a.5.5 0 0 1-.599.49 16.807 16.807 0 0 1-4.75-1.196 1.482 1.482 0 0 0-.308-.073.5.5 0 0 0-.17.033A18.75 18.75 0 0 1 6.43 19.5a.5.5 0 0 1-.574-.486c0-.082.022-.177.044-.254.03-.11.076-.3.097-.401a.5.5 0 0 0-.143-.341.497.497 0 0 0-.345-.137c-1.655-.11-3.33-.611-4.055-2.66A11.367 11.367 0 0 1 4 12c0-1.747.22-3.643.432-4.822.034-.374.13-1.042.15-1.165Z"></path>
                 </svg>
               </a>
             </div>
           </div>
-          
           <div>
-            <h3 className="text-sm font-semibold mb-4">Product</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#features" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Features</a></li>
-              <li><a href="#pricing" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Pricing</a></li>
-              <li><a href="#integrations" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Integrations</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Case Studies</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Security</a></li>
+            <h3 className="text-sm font-medium text-slate-900 dark:text-slate-50 mb-4">Product</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Features</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Pricing</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Integrations</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Documentation</a></li>
             </ul>
           </div>
-          
           <div>
-            <h3 className="text-sm font-semibold mb-4">Developers</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#documentation" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Documentation</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">API Reference</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">SDK</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Plugins</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Status</a></li>
+            <h3 className="text-sm font-medium text-slate-900 dark:text-slate-50 mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">About</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Blog</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Careers</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Contact</a></li>
             </ul>
           </div>
-          
           <div>
-            <h3 className="text-sm font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">About</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Blog</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Careers</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Contact</a></li>
-              <li><a href="#" className="text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Partners</a></li>
+            <h3 className="text-sm font-medium text-slate-900 dark:text-slate-50 mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Privacy</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Terms</a></li>
+              <li><a href="#" className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Security</a></li>
             </ul>
           </div>
         </div>
-        
+
         <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            &copy; {new Date().getFullYear()} PerenaPay. All rights reserved.
+            &copy; {new Date().getFullYear()} StablePay. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-xs text-slate-500 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400">Privacy Policy</a>
