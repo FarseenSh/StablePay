@@ -372,9 +372,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📩 Contact & Support
 
 - **GitHub Issues**: For bug reports and feature requests
-- **Email**: support@stablepay.finance
-- **Twitter**: [@StablePayHQ](https://twitter.com)
-- **Discord**: [Join our community](https://discord.gg)
+- **Email**: farseenshaikh@gmail.com
+- **Twitter**: https://x.com/StablePay_
+
 
 ---
 
