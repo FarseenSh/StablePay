@@ -373,7 +373,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **GitHub Issues**: For bug reports and feature requests
 - **Email**: farseenshaikh@gmail.com
-- **Twitter**: (https://x.com/StablePay_)
+- **Twitter**: https://x.com/0xStablePay
 
 
 ---
